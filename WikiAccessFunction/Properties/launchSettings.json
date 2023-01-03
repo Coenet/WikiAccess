@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "WikiAccessFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7035"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 32410,
+      "useSSL": false
+    }
+  }
+}
