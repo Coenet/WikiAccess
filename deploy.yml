@@ -25,3 +25,13 @@ spec:
           limits:
             memory: 256Mi
             cpu: 50m
+        volumeMounts:
+        - name: secrets
+          mountPath: /app/secrets
+          readOnly: true
+      volumes:
+      - name: secrets
+        secret:
+          secretName: wiki-secret
+      imagePullSecrets:
+      - name: regcred
